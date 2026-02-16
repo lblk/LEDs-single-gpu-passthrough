@@ -34,7 +34,11 @@ options vfio-pci disable_vga=1
 
 
 **Install required packages**<br>
-`sudo pacman -S qemu libvirt edk2-ovmf virt-manager dnsmasq ebtables iptables bridge-utils`
+```
+sudo pacman -S qemu libvirt edk2-ovmf virt-manager dnsmasq ebtables iptables bridge-utils
+# or
+sudo apt install -y qemu-system qemu-kvm libvirt-daemon-system libvirt-clients dnsmasq virt-manager ebtables iptables bridge-utils
+```
 
 **Enable them in init system**<br>
 ```
